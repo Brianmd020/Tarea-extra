@@ -36,7 +36,7 @@ registros_reptiles <-
           )
 
 regiones <-
-  st_read("regiones-socioeconomicas.gpkg")
+  st_read("regiones-socioeconomicas.gpkg", quiet = TRUE)
 
 st_crs(registros_reptiles) <- 4326
 
